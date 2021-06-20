@@ -1,0 +1,148 @@
+   <div class="container">
+    <section class="section__align-left" id="section--1">
+        <div class="blob__small" id="bloob-small">
+            <div class="makeItSuper__img" id="makeItSuper-img">
+
+            </div>
+            <div class="border__bottom" id="border-btm">
+
+            </div>
+              <div class="collect__image" id="colect-img">
+
+              </div>
+              <div class="acounting__dot acounting__dot_1">
+
+              </div>
+
+        </div>
+    </section>
+    <section class="section__align-right" id="section--2">
+    <div class="circle__dot" id="circle-img">
+         <div class="calculator__Card" id="calculator">
+            <div class="card__header">
+              <h3 class="card__header-text" id="header-txt">
+                Eligibility Calculator
+              </h3>
+            </div>
+          <section class="card__section" id="card-section">
+            <div>
+              <label>Monthly Income</label>
+              <div>
+                <p class="monthly__income_txt">&#x20B9; {{income}}</p>
+                <mat-slider 
+                (input)="updateIncomeValue($event)" 
+                 aria-label="unit(s)" value="1000"  min="1000"
+                max="30000"></mat-slider>
+                <p class="min__max_value">
+                  <span>&#x20B9; 1,00,000</span>
+                  <span class="float__max-slidervalue">&#x20B9; 3,00,000</span>
+                </p>
+              </div>
+              
+            </div>
+
+            <div>
+              <label>Monthly Expense</label>
+              <div>
+                <p class="monthly__income_txt">&#x20B9; {{expenses}}</p>
+                <mat-slider aria-label="unit(s)" value="1000"  min="1000"
+                max="50000" (input)="updateExpenseValue($event)"></mat-slider>
+              </div>
+            </div>
+
+            <div>
+              <label>Repayment Tenure</label>
+              <div class="dropdown-div border-botton-div">
+              <select name="Year" id="year__dropdown" class="dropdown__menu">
+                <option value="6 Months">6 Months</option>
+                <option value="1 Year">1 Year</option>
+                <option value="2 Year">2 Year</option>
+                <option value="3 Year">3 Year</option>
+              </select>
+            </div>
+            </div>
+            <div class="toggle-div">
+              <label>Do you have any existing loans?</label>
+              <span class="alignLoansToggle__btn">
+                <mat-slide-toggle></mat-slide-toggle>
+               </span>
+            </div>
+
+            <div class="existingEmi__div">
+              <label>EMI of existing loan(optional)</label>
+              <p class="manual__number border-botton-div"><span style="font-size: 18px;">&#x20B9; </span><span><input type="text" value="15,000" ([ngModel])="monthlyEmi" class="input__emi" /> </span></p>
+            </div>
+          </section>
+         </div>
+
+         <div class="getMoney__card">
+            <div style="margin-top: 30%;">
+              <h4 class="getMoneyCard__header">Loan Amount</h4>
+              <p class="getMoneyCard__value">&#x20B9; 1,00,000</p>
+            </div>
+
+            <div style="margin-top: 15%;">
+              <h4 class="getMoneyCard__header">Your EMI will be</h4>
+              <p class="getMoneyCard__value">&#x20B9; 15,000</p>
+            </div>
+
+            <div  class="getMoneybtn--div">
+            <button class="getMoneyAnchor--link">GET MONEY</button>
+            </div>  
+         </div>
+    </div>
+    </section>
+
+      <section>
+          <div class="sol__wave" id="sol-wave-img">
+              <div class="leftWave__div" >
+                <img src="assets/Boostyourbusiness.png" alt="Boostyourbusiness" class="boostYour__img">
+
+                <div class="border__bottom rightWave__border-bottom" id="border-btm">
+                <a class="nav__link nav__link--btn btn--show-modal align__btn"  href="#">Get an Open Account</a>
+                </div>
+                <img src="assets/Getyourhandsona.png" alt="Boostyourbusiness" class="getYourHandsOn__img boostYour__img">
+              </div>
+               <div class="rectangle__card rectangle__23 index-card" id="rectangle-23-img">
+                <img src="assets/CardImages/GetPaidInstantly.png" alt="GetPaidInstantly" class="card-img1 card__img">
+                <h3 class="card-img2 card__txt card__header--main">Quick cash disbursement</h3>
+                <p class="card-img3 card__txt">Get terms loans that your business needs within 72 hrs</p>
+               </div>
+
+
+               <div class="rectangle__19 rectangle__card index-card" id="rectangel-10-img">
+                <img src="assets/CardImages/Lowinterestrate.png" alt="Lowinterestrate" class="card-img1 card__img">
+                <h3 class="card-img2 card__txt card__header--main">Low-interest rate</h3>
+                <p class="card-img3 card__txt">Achieve your financial goals with an amazing interest rate starting at 13% per annum</p>
+               </div>
+
+
+               <div class="rectangle__20 rectangle__card index-card" id="rectangel-20-img">
+                <img src="assets/CardImages/SecurePayments.png" alt="SecurePayments" class="card-img1 card__img">
+                <h3 class="card-img2 card__txt card__header--main">Zero Paperwork</h3>
+                <p class="card-img3 card__txt">Get started instantly by submitting only your basic details & bank statements</p>
+               </div>
+
+
+
+               <div class="rectangle__21 rectangle__card index-card" id="rectangel-20-img">
+                <img src="assets/CardImages/freelancer_feature_icon_6@1.5x.png" alt="SecurePayments" class="card-img1 card__img">
+                <h3 class="card-img2 card__txt card__header--main">Ace your business finances</h3>
+                <p class="card-img3 card__txt">Manage banking, accounting & everything in between, on one platform</p>
+               </div>
+
+
+
+               <div class="rectangle__22 rectangle__card index-card" id="rectangel-20-img">
+                <img src="assets/CardImages/Covid.png" alt="SecurePayments" class="card-img1 card__img">
+                <h3 class="card-img2 card__txt card__header--main">Loans to fight COVID-19</h3>
+                <p class="card-img3 card__txt" style="color: #999999">Zero EMI for first 3 months on Back-to-Business loans of upto 1 lakh</p>
+               </div>
+          </div>   
+
+          
+      </section>
+
+   </div>
+  
+
